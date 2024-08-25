@@ -1,6 +1,7 @@
 import express from "express"
 import { requestCount } from "./monitoring/requestcount";
 import client from "prom-client";
+console.log("hey");
 const app = express();
 app.use(requestCount);
 //@ts-ignore
