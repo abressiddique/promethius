@@ -4,6 +4,8 @@ import client from "prom-client";
 console.log("hey");
 const app = express();
 app.use(requestCount);
+
+
 //@ts-ignore
 function middleware(req,res,next){
     const startTime = Date.now();
